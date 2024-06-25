@@ -7,7 +7,7 @@
     <title>PhepesiStreams</title>
     <style>
         body {
-            margin: 0;
+            margin: 200;
             overflow: hidden;
         }
         
@@ -38,7 +38,7 @@ const LOG_SCALE_FACTOR = .95;  // scaling factor for logarithmic relationship
 
 function preload() {
     circleDiameter = Math.min(windowWidth, windowHeight);
-    let desiredImageHeight = circleDiameter * 2;
+    let desiredImageHeight = circleDiameter * 1.6;
 
     images = ["phepesiGreens.png", "phepesiReds.png", "phepesiWhites.png"]
     for (let i = 0; i < 3; i++) {
@@ -97,7 +97,7 @@ function windowResized() {
 
     // Recompute any parameters that depend on the window size
     circleDiameter = Math.min(windowWidth, windowHeight);
-    let desiredImageHeight = circleDiameter * 2;
+    let desiredImageHeight = circleDiameter * 1.6;
     
     for (let i = 0; i < images.length; i++) {
         let img = images[i];
